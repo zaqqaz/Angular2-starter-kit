@@ -20,18 +20,25 @@ function webpack(watch, callback) {
     let webpackOptions = {
         watch: watch,
         module: {
-            //preLoaders: [
-            //    {
-            //        test: /\.js$/,
-            //        exclude: /node_modules/,
-            //        loader: 'jshint-loader'
-            //    }
-            //],
+            preLoaders: [
+                {
+                    test: /\.ts$/,
+                    loader: 'ts-loader'
+                }
+            ],
             loaders: [
                 {
-                    test: /\.js$/,
+                    test: /\.js|.ts$/,
                     exclude: /node_modules/,
-                    loader: 'babel-loader?' + JSON.stringify(babelSettings)
+                    loader: 'babel-loader',
+                    query: {
+                        presets: ['es2015'],
+                        plugins: [
+                            'transform-runtime',
+                            "transform-decorators-legacy",
+                            "transform-class-properties"
+                        ]
+                    }
                 },
                 {
                     test: /\.html$/,

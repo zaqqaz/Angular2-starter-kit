@@ -6,17 +6,19 @@ import {enableProdMode, provide, Component} from 'angular2/core';
 import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy, RouteConfig} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
 import { TypingCarouselDirective } from 'ng2-typing-carousel';
-import template from './app.html';
+//import template from './app.html';
 
-import {apiConfiguration} from './api/api.configuration';
+//import {apiConfiguration} from './api/api.configuration';
 
 @Component({
     selector: 'body',
-    template: template,
+    templateUrl: './app.html',
     directives: [TypingCarouselDirective]
 })
 //@RouteConfig(router.config)
 export class AppComponent {
+    public carousel;
+
     constructor() {
         this.carousel = ['Typescript', 'Babel', 'Webpack', 'Gulp'];
     }

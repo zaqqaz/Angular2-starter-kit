@@ -3,7 +3,7 @@ let gutil = require('gulp-util');
 let isAdminSide = (gutil.env.side == 'admin');
 
 exports.paths = {
-    initModule: 'app/index.js',
+    initModule: 'app/index.ts',
     mainStyleFile: 'src/app/index.scss',
     src: 'src',
     app: 'src/app',
