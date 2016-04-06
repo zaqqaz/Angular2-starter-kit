@@ -1,0 +1,53 @@
+$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+$brand-primary: #2196F3;
+
+// DON'T TOUCH //
+
+// bower:scss
+// endbower
+// injector
+// endinjector
+
+// ENJOY :) //
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background: $brand-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  font-size: 62.5%;
+}
+
+a {
+  color: $brand-primary;
+  &:hover {
+    color: darken($brand-primary, 15%);
+    text-decoration: none;
+  }
+}
+
+.text-primary {
+  color: $brand-primary;
+}
+
+.hero {
+  background: #fff;
+  padding: 30px;
+  width: 800px;
+  height: 126px;
+}

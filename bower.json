@@ -1,0 +1,28 @@
+{
+  "name": "Angular2-ts-es6-seed",
+  "description": "Seed project for Angular 2 with typescript and es6 features (Typescript, Babel, Webpack, Gulp).",
+  "main": "src/index.js",
+  "authors": [
+    "Denis Artyuhovich | denis.by"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular2",
+    "es6",
+    "webpack",
+    "gulp"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
+  }
+}
