@@ -22,13 +22,17 @@ function webpack(watch, callback) {
         module: {
             preLoaders: [
                 {
-                    test: /\.ts$/,
-                    loader: 'ts-loader'
+                    test: /\.html$/,
+                    loader: 'raw?minimize=false'
                 }
             ],
             loaders: [
                 {
-                    test: /\.js|.ts$/,
+                    test: /\.ts$/,
+                    loader: 'ts-loader'
+                },
+                {
+                    test: /\.js$/,
                     exclude: /node_modules/,
                     loader: 'babel-loader',
                     query: {
@@ -39,10 +43,6 @@ function webpack(watch, callback) {
                             "transform-class-properties"
                         ]
                     }
-                },
-                {
-                    test: /\.html$/,
-                    loader: 'raw?minimize=false'
                 }
             ]
         },
