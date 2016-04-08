@@ -19,6 +19,9 @@ function webpack(watch, callback) {
 
     let webpackOptions = {
         watch: watch,
+        resolve: {
+            extensions: ['', '.js', '.ts']
+        },
         module: {
             preLoaders: [
                 {
