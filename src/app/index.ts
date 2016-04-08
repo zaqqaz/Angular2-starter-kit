@@ -4,7 +4,8 @@ import {bootstrap} from 'angular2/platform/browser';
 import {enableProdMode, provide, Component} from 'angular2/core';
 import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy, RouteConfig} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
-import { TypingCarouselDirective } from 'ng2-typing-carousel';
+import {TypingCarouselDirective} from 'ng2-typing-carousel';
+import {router} from './router';
 import template = require('./app.html');
 //import {apiConfiguration} from './api/api.configuration';
 
@@ -12,16 +13,10 @@ enableProdMode();
 
 @Component({
     selector: 'body',
-    template: template,
-    directives: [TypingCarouselDirective]
+    template: '<router-outlet></router-outlet>'
 })
-//@RouteConfig(router.config)
+@RouteConfig(router.config)
 class AppComponent {
-    public carousel;
-
-    constructor() {
-        this.carousel = ['Typescript', 'Babel', 'Webpack', 'Gulp'];
-    }
 }
 
 bootstrap(AppComponent, [
