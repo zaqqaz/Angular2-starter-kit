@@ -1,1 +1,1 @@
-declare function require (id: string): any;
+declare function require (path: string): string;
