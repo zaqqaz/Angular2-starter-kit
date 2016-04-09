@@ -1,4 +1,8 @@
-class Post {
+class Feature {
+    public id: number;
+    public title: string;
+    public article: string;
+
     constructor({id, title, article}) {
         this.id = id;
         this.title = title;
@@ -6,4 +10,4 @@ class Post {
     }
 }
 
-export default Post;
+export default Feature;
