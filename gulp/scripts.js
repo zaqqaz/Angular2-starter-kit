@@ -2,8 +2,8 @@
 let path = require('path');
 let gulp = require('gulp');
 let conf = require('./conf');
-
 let browserSync = require('browser-sync');
+var webpackStream = require('webpack-stream');
 
 let $ = require('gulp-load-plugins')();
 
@@ -75,7 +75,7 @@ function webpack(watch, callback) {
     };
 
     return gulp.src(path.join(conf.paths.src, conf.paths.initModule))
-        .pipe($.webpack(webpackOptions, null, webpackChangeHandler))
+        .pipe(webpackStream(webpackOptions, null, webpackChangeHandler))
         .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve/app')));
 }
 
