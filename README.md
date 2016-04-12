@@ -23,11 +23,11 @@
   │       ├── main.html
   │       ├── main.scss
   │	      └── main.ts
-  ├── shared  -- Will be described soon
+  ├── shared  -- **Will be described soon**
   ├── styles  -- Common styles for all application, not for component. Global styles, colors, mixins, etc..
   │   └── main.scss
   ├── index.ts
   └── router.ts
 ```
-** What is endpoints ? ** 
+**What is endpoints ?** 
 - coming soon
