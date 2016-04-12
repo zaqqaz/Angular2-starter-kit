@@ -12,19 +12,19 @@
 
 ## Directory Structure (src/app)
 
-```
+```html
   .
   ├── api
   │   ├── models
   │   ├── managers
   │   └── api.configuration.ts
-  │── endpoints **please, read note below**
+  │── endpoints <b>please, read note below</b>
   │   └── main
   │       ├── main.html
   │       ├── main.scss
   │	      └── main.ts
-  ├── shared ** Will be described soon **
-  ├── styles ** Common styles for all application, not for component. Global styles, colors, mixins, etc. - heare ** 
+  ├── shared <b>Will be described soon</b>
+  ├── styles <b>Common styles for all application, not for component. Global styles, colors, mixins, etc. - heare</b>
   │   └── main.scss
   ├── index.ts
   └── router.ts
