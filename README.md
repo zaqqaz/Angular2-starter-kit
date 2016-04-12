@@ -13,21 +13,21 @@
 ## Directory Structure (src/app)
 
 ```html
-  .
-  ├── api
-  │   ├── models
-  │   ├── managers
-  │   └── api.configuration.ts
-  │── endpoints -- please, read note below
-  │   └── main
-  │       ├── main.html
-  │       ├── main.scss
-  │	      └── main.ts
-  ├── shared  -- Will be described soon
-  ├── styles  -- Common styles for all application, NOT for component. Global styles, colors, mixins, etc..
-  │   └── main.scss
-  ├── index.ts
-  └── router.ts
+	.
+	├──api
+	│	├──models
+	│	├──managers
+	│	└──api.configuration.ts
+	│──endpoints--please,readnotebelow
+	│	└──main
+	│	├──main.html
+	│	├──main.scss
+	│	└──main.ts
+	├──shared--Willbedescribedsoon
+	├──styles--Commonstylesforallapplication,NOTforcomponent.Globalstyles,colors,mixins,etc..
+	│	└──main.scss
+	├──index.ts
+	└──router.ts
 ```
 **What is endpoints ?** 
 - coming soon
