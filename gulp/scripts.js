@@ -27,6 +27,10 @@ function webpack(watch, callback) {
                 {
                     test: /\.html$/,
                     loader: 'raw?minimize=false'
+                },
+                {
+                    test: /\.scss/,
+                    loader: 'raw!sass-loader'
                 }
             ],
             loaders: [

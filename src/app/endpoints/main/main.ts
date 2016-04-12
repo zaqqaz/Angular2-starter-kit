@@ -5,6 +5,7 @@ import {Api} from 'angular2-rest-api';
 @Component({
     selector: 'main',
     template: require('./main.html'),
+    styles: [require('./main.scss')],
     directives: [TypingCarouselDirective]
 })
 
