@@ -15,17 +15,17 @@
 ```html
 	.
 	├──api
-	│	├──models
-	│	├──managers
-	│	└──api.configuration.ts
+	│   ├──models
+	│   ├──managers
+	│   └──api.configuration.ts
 	│──endpoints--please,readnotebelow
-	│	└──main
-	│	├──main.html
-	│	├──main.scss
-	│	└──main.ts
+	│   └──main
+	│   ├──main.html
+	│   ├──main.scss
+	│   └──main.ts
 	├──shared--Willbedescribedsoon
 	├──styles--Commonstylesforallapplication,NOTforcomponent.Globalstyles,colors,mixins,etc..
-	│	└──main.scss
+	│   └──main.scss
 	├──index.ts
 	└──router.ts
 ```
