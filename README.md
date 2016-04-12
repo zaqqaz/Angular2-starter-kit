@@ -3,7 +3,7 @@
 ## Features
 - Typescript
 - ES6 (Typescript->ES6->babel). Also has clean ES6 branch
-- REST API(https://github.com/zaqqaz/Angular2-rest-api).
+- [REST API](https://github.com/zaqqaz/Angular2-rest-api).
 - SASS (scss) - **easy import into component**
 - GULP + WEBPACK for develop and build project.
 
