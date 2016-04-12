@@ -4,7 +4,7 @@ let isAdminSide = (gutil.env.side == 'admin');
 
 exports.paths = {
     initModule: 'app/index.ts',
-    mainStyleFile: 'src/app/index.scss',
+    mainStyleFile: 'src/app/styles/main.scss',
     src: 'src',
     app: 'src/app',
     dist: 'dist',

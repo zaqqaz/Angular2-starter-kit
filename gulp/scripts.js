@@ -3,37 +3,26 @@ let path = require('path');
 let gulp = require('gulp');
 let conf = require('./conf');
 let browserSync = require('browser-sync');
-var webpackStream = require('webpack-stream');
-
+let webpackStream = require('webpack-stream');
+let $webpack = require("webpack");
 let $ = require('gulp-load-plugins')();
 
 function webpack(watch, callback) {
-    let babelSettings = {
-        presets: ['es2015'],
-        plugins: [
-            'transform-runtime',
-            "transform-decorators-legacy",
-            "transform-class-properties"
-        ]
-    };
-
     let webpackOptions = {
         watch: watch,
         resolve: {
             extensions: ['', '.js', '.ts']
         },
         module: {
-            preLoaders: [
+            loaders: [
                 {
                     test: /\.html$/,
-                    loader: 'raw?minimize=false'
+                    loader: `raw?minimize=${!watch}`
                 },
                 {
                     test: /\.scss/,
                     loader: 'raw!sass-loader'
-                }
-            ],
-            loaders: [
+                },
                 {
                     test: /\.ts$/,
                     loader: 'ts-loader'

@@ -82,10 +82,10 @@
     "require-dir": "~0.3.0",
     "run-sequence": "1.1.5",
     "sass-loader": "^3.2.0",
-    "ts-loader": "^0.8.1",
+    "ts-loader": "^0.8.2",
     "typescript": "^1.8.9",
     "typings": "0.7.12",
-    "webpack": "1.12.14",
+    "webpack": "^1.12.14",
     "webpack-stream": "~3.1.0",
     "wiredep": "~4.0.0",
     "wrench": "^1.5.9"
