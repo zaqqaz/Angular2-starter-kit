@@ -18,13 +18,13 @@
 	│   ├──models
 	│   ├──managers
 	│   └──api.configuration.ts
-	│──endpoints--please,readnotebelow
+	│──endpoints  -- please,read note below
 	│   └──main
 	│   ├──main.html
 	│   ├──main.scss
 	│   └──main.ts
-	├──shared--Willbedescribedsoon
-	├──styles--Commonstylesforallapplication,NOTforcomponent.Globalstyles,colors,mixins,etc..
+	├──shared  -- Will be described soon
+	├──styles  -- Common styles for all application, NOT for component. Global styles, colors, mixins,etc..
 	│   └──main.scss
 	├──index.ts
 	└──router.ts
